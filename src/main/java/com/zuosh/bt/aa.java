@@ -1,6 +1,4 @@
-import com.mysql.jdbc.StatementImpl;
 import com.sun.btrace.AnyType;
-import com.sun.btrace.BTraceUtils;
 import com.sun.btrace.annotations.*;
 
 import static com.sun.btrace.BTraceUtils.*;
@@ -10,15 +8,15 @@ import static com.sun.btrace.BTraceUtils.*;
  */
 @BTrace
 public class aa {
-    @OnMethod(clazz = "com.bst.suit.Main"
-            , method = "say", location = @Location(Kind.RETURN))
-    public static void say(@Self Object self, String parm, @ProbeMethodName String pmn, @Duration long time) {
-//        Class clazz = BTraceUtils.Reflective.classOf(self);
-//        int counter = getInt(field(clazz, "counter"), self);
-//        println("counter value is " + counter + "    ProbeMethodName is " + pmn);
-        println(parm + " [ time:" + time + " ]");
-//        println(pmn);
-    }
+//    @OnMethod(clazz = "com.zuosh.bt.Main"
+//            , method = "test2", location = @Location(Kind.RETURN))
+//    public static void say(@Self Object self, String parm, @ProbeMethodName String pmn, @Duration long time) {
+////        Class clazz = BTraceUtils.Reflective.classOf(self);
+////        int counter = getInt(field(clazz, "counter"), self);
+////        println("counter value is " + counter + "    ProbeMethodName is " + pmn);
+//        println(parm + " [ time:" + time + " ]");
+////        println(pmn);
+//    }
 
 //    @OnMethod(clazz = "com.mysql.jdbc.ConnectionImpl"
 //            , method = "/prepare.*/")
@@ -46,14 +44,109 @@ public class aa {
 //        println("========================ConnectionImpl over==============================");
 //    }
 
-    @OnMethod(clazz = "com.alibaba.druid.filter.logging.Log4jFilter"
-            , method = "statementLog")
-    public static void logTest(String message) {
-        if ((Strings.indexOf(message, "executed.") > 0) && (Strings.indexOf(message,"?") < 1)) {
-            println(message);
-            println("=========================druid sql=========================================");
+
+    /**
+     * 监控 sql执行语句
+     *
+     * @param message
+     */
+//    @OnMethod(clazz = "com.alibaba.druid.filter.logging.Log4jFilter"
+//            , method = "statementLog")
+//    public static void logTest(String message) {
+//        if ((Strings.indexOf(message, "executed.") > 0) && (Strings.indexOf(message, "?") < 1)) {
+//            println(message);
+//            println("=========================druid sql=========================================");
+//        }
+//    }
+
+
+//    @OnMethod(clazz = "/com\\.alibaba\\.druid\\.sql\\.*/"
+//            , method = "/.*/", location = @Location(Kind.RETURN))
+//    public static void logTime(@ProbeMethodName String pmn, @Duration long durationL) {
+////        if (durationL / 1000000 > 1) {
+//        println("method: " + pmn + " time(ms): " + (durationL / 1000000));
+////        }
+//    }
+
+
+//    @OnMethod(clazz = "/.*/", method = "/.*/"
+//            , location = @Location(Kind.RETURN))
+//    public static void test(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
+//        if (time / 1000000 > 1) {
+//            println(cname + "." + pmn + "(ms) :" + (time / 1000000));
+//        }
+//    }
+//    @OnMethod(clazz = "com.alibaba.druid.filter.logging.Log4jFilter", method = "/.*/"
+//            , location = @Location(Kind.RETURN))
+//    public static void test(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
+//        if (time / 1000000 > 1) {
+//            println(cname + "." + pmn + "(ms) :" + (time / 1000000));
+//        }
+//    }
+    @OnMethod(clazz = "/com.alibaba.druid.*/", method = "/.*/"
+            , location = @Location(Kind.RETURN))
+    public static void test(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
+        if (time / 1000000 > 1) {
+            println(cname + "." + pmn + "(ms) :" + (time / 1000000));
         }
     }
+
+    @OnMethod(clazz = "/org.mybatis.*/", method = "/.*/"
+            , location = @Location(Kind.RETURN))
+    public static void sqlsessaion(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
+        if (time / 1000000 > 1) {
+            println(cname + "." + pmn + "(ms) :" + (time / 1000000));
+        }
+    }
+
+    @OnMethod(clazz = "/org.springframework.jdbc.*/", method = "/.*/"
+            , location = @Location(Kind.RETURN))
+    public static void jdbc(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
+        if (time / 1000000 > 1) {
+            println(cname + "." + pmn + "(ms) :" + (time / 1000000));
+        }
+    }
+
+    @OnMethod(clazz = "/org.springframework.data.*/", method = "/.*/"
+            , location = @Location(Kind.RETURN))
+    public static void data(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
+        if (time / 1000000 > 1) {
+            println(cname + "." + pmn + "(ms) :" + (time / 1000000));
+        }
+    }
+
+    @OnMethod(clazz = "/org.springframework.aop.*/", method = "/.*/"
+            , location = @Location(Kind.RETURN))
+    public static void aop(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
+        if (time / 1000000 > 1) {
+            println(cname + "." + pmn + "(ms) :" + (time / 1000000));
+        }
+        if (time / 1000000 > 500) {
+            jstack();
+        }
+    }
+
+//    @OnMethod(clazz = "org.mybatis.spring.SqlSessionUtils", method = "/.*/"
+//            , location = @Location(Kind.RETURN))
+//    public static void sqlsessaion(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
+//        if (time / 1000000 > 1) {
+//            println(cname + "." + pmn + "(ms) :" + (time / 1000000));
+//        }
+////        println(types);
+////        println(pmn);
+//    }
+
+
+//    @OnMethod(clazz = "+java.sql.Statement", method = "/execute($|Update|Query|Batch)/")
+//    public static void onExecute(@Self Statement currentStatement, AnyType[] args) {
+//        if (args.length == 0) {
+//            // No SQL argument; lookup the SQL from the prepared statement
+//            executingStatement = Collections.get(preparedStatementDescriptions, (Statement) currentStatement);
+//        } else {
+//            // Direct SQL in the first argument
+//            executingStatement = useStackTrace ? Threads.jstackStr() : str(args[0]);
+//        }
+//    }
 
 //    @OnMethod(clazz = "com.mysql.jdbc.ConnectionImpl"
 //            , method = "/exec.*/")
@@ -116,12 +209,12 @@ public class aa {
 //        println("findLoginUser:time:" + pmn + "->" + time);
 //    }
 
-    @OnMethod(clazz = "java.lang.System"
-            , method = "gc", location = @Location(Kind.ENTRY))
-    public static void onGc() {
-        print("SystemGc");
-        jstack();
-    }
+//        @OnMethod(clazz = "java.lang.System"
+//                , method = "gc", location = @Location(Kind.ENTRY))
+//        public static void onGc () {
+//            print("SystemGc");
+//            jstack();
+//        }
 
 
 }

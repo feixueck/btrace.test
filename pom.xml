@@ -55,14 +55,20 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.sun.tools.btrace</groupId>-->
+            <!--<artifactId>btrace-agent</artifactId>-->
+            <!--<version>1.2.3</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.sun.tools.btrace</groupId>-->
+            <!--<artifactId>btrace-boot</artifactId>-->
+            <!--<version>1.2.3</version>-->
+        <!--</dependency>-->
+        <!-- https://mvnrepository.com/artifact/com.sun.tools.btrace/btrace-client -->
         <dependency>
             <groupId>com.sun.tools.btrace</groupId>
-            <artifactId>btrace-agent</artifactId>
-            <version>1.2.3</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.tools.btrace</groupId>
-            <artifactId>btrace-boot</artifactId>
+            <artifactId>btrace-client</artifactId>
             <version>1.2.3</version>
         </dependency>
 
