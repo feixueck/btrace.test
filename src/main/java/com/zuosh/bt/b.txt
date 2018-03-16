@@ -1,358 +1,406 @@
-org.springframework.jdbc.datasource.DataSourceTransactionManager.doGetTransaction(ms) :18
-org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(ms) :39
-org.springframework.data.redis.connection.jedis.JedisConnection.<clinit>(ms) :5
-org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(ms) :45
-org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(ms) :45
-org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(ms) :46
-org.springframework.data.redis.core.RedisConnectionUtils.getConnection(ms) :46
-org.springframework.data.redis.core.RedisConnectionUtils.getConnection(ms) :46
-org.springframework.data.redis.connection.DefaultStringRedisConnection.<init>(ms) :6
-org.springframework.data.redis.core.StringRedisTemplate.preProcessConnection(ms) :33
-org.springframework.data.redis.core.RedisTemplate.createRedisConnectionProxy(ms) :97
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :185
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :185
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :185
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :3
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :3
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :3
-org.mybatis.spring.transaction.SpringManagedTransactionFactory.newTransaction(ms) :2
-org.mybatis.spring.SqlSessionUtils.getSqlSession(ms) :26
-com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ms) :2
-com.alibaba.druid.filter.stat.StatFilter.mergeSql(ms) :2
-com.alibaba.druid.filter.stat.StatFilter.createSqlStat(ms) :2
-com.alibaba.druid.support.http.AbstractWebStatImpl$WebStatFilterContextListener.executeBefore(ms) :3
-com.alibaba.druid.filter.stat.StatFilterContext.executeBefore(ms) :3
-com.alibaba.druid.filter.stat.StatFilter.internalBeforeStatementExecute(ms) :6
-com.alibaba.druid.filter.stat.StatFilter.statementExecuteQueryBefore(ms) :6
-com.alibaba.druid.filter.FilterEventAdapter.statement_executeQuery(ms) :4
-com.alibaba.druid.filter.FilterChainImpl.statement_executeQuery(ms) :4
-com.alibaba.druid.filter.FilterAdapter.statement_executeQuery(ms) :4
-com.alibaba.druid.filter.FilterEventAdapter.statement_executeQuery(ms) :12
-com.alibaba.druid.filter.FilterChainImpl.statement_executeQuery(ms) :12
-com.alibaba.druid.proxy.jdbc.StatementProxyImpl.executeQuery(ms) :12
-com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal(ms) :15
-com.alibaba.druid.pool.DruidDataSource.getConnectionDirect(ms) :17
-com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(ms) :17
-com.alibaba.druid.filter.logging.LogFilter.dataSource_getConnection(ms) :19
-com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(ms) :19
-com.alibaba.druid.filter.stat.StatFilter.dataSource_getConnection(ms) :19
-com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(ms) :19
-com.alibaba.druid.pool.DruidDataSource.getConnection(ms) :19
-com.alibaba.druid.pool.DruidDataSource.getConnection(ms) :19
-com.alibaba.druid.pool.DruidDataSource.getConnection(ms) :19
-org.springframework.jdbc.datasource.ConnectionHolder.<init>(ms) :3
-org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(ms) :31
-org.springframework.jdbc.datasource.DataSourceUtils.getConnection(ms) :31
-org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(ms) :41
-org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(ms) :41
-com.alibaba.druid.filter.FilterChainImpl.wrap(ms) :11
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :22
-com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(ms) :22
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :22
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :22
-com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(ms) :22
-com.alibaba.druid.sql.parser.SQLExprParser.parseSelectItem(ms) :2
-com.alibaba.druid.sql.parser.SQLSelectParser.parseSelectList(ms) :3
-com.alibaba.druid.sql.parser.SQLExprParser.dotRest(ms) :2
-com.alibaba.druid.sql.parser.SQLExprParser.primaryRest(ms) :6
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.primaryRest(ms) :6
-com.alibaba.druid.sql.parser.SQLExprParser.primary(ms) :6
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.primary(ms) :6
-com.alibaba.druid.sql.parser.SQLExprParser.expr(ms) :6
-com.alibaba.druid.sql.parser.SQLSelectParser.expr(ms) :6
-com.alibaba.druid.sql.parser.SQLSelectParser.parseTableSourceQueryTableExpr(ms) :6
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSource(ms) :13
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseFrom(ms) :13
-com.alibaba.druid.sql.parser.SQLExprParser.primary(ms) :2
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.primary(ms) :2
-com.alibaba.druid.sql.parser.SQLExprParser.bitXor(ms) :2
-com.alibaba.druid.sql.parser.SQLExprParser.multiplicative(ms) :2
-com.alibaba.druid.sql.parser.SQLExprParser.additive(ms) :3
-com.alibaba.druid.sql.parser.SQLExprParser.shift(ms) :3
-com.alibaba.druid.sql.parser.SQLExprParser.bitAnd(ms) :3
-com.alibaba.druid.sql.parser.SQLExprParser.bitOr(ms) :3
-com.alibaba.druid.sql.parser.SQLExprParser.equalityRest(ms) :11
-com.alibaba.druid.sql.parser.SQLExprParser.exprRest(ms) :12
-com.alibaba.druid.sql.parser.SQLExprParser.expr(ms) :12
-com.alibaba.druid.sql.parser.SQLSelectParser.expr(ms) :12
-com.alibaba.druid.sql.parser.SQLSelectParser.parseWhere(ms) :12
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(ms) :29
-com.alibaba.druid.sql.parser.SQLSelectParser.select(ms) :29
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(ms) :29
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :29
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :29
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :29
-com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ms) :30
-com.alibaba.druid.filter.stat.StatFilter.mergeSql(ms) :30
-com.alibaba.druid.filter.stat.StatFilter.createSqlStat(ms) :31
-com.alibaba.druid.filter.stat.StatFilter.statementPrepareAfter(ms) :31
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :53
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :53
-com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :53
-com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :62
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(ms) :2
-com.alibaba.druid.sql.parser.SQLSelectParser.select(ms) :2
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(ms) :2
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :2
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :2
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :2
-com.alibaba.druid.sql.dialect.mysql.visitor.MySqlOutputVisitor.visit(ms) :7
-com.alibaba.druid.sql.ast.expr.SQLVariantRefExpr.accept0(ms) :7
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :7
-com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.visitorBinaryRight(ms) :7
-com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr.accept0(ms) :8
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :8
-com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.visitBinaryLeft(ms) :8
-com.alibaba.druid.sql.ast.expr.SQLIntegerExpr.accept0(ms) :2
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :2
-com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.visitorBinaryRight(ms) :2
-com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr.accept0(ms) :2
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :2
-com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.visitorBinaryRight(ms) :2
-com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr.accept0(ms) :10
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :11
-com.alibaba.druid.sql.dialect.mysql.visitor.MySqlOutputVisitor.visit(ms) :12
-com.alibaba.druid.sql.dialect.mysql.ast.statement.MySqlSelectQueryBlock.accept0(ms) :12
-com.alibaba.druid.sql.dialect.mysql.ast.statement.MySqlSelectQueryBlock.accept0(ms) :12
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :12
-com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.visit(ms) :12
-com.alibaba.druid.sql.ast.statement.SQLSelect.accept0(ms) :12
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :12
-com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.visit(ms) :12
-com.alibaba.druid.sql.ast.statement.SQLSelectStatement.accept0(ms) :12
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :12
-com.alibaba.druid.sql.SQLUtils.toSQLString(ms) :12
-com.alibaba.druid.sql.SQLUtils.toSQLString(ms) :12
-com.alibaba.druid.sql.SQLUtils.format(ms) :14
-com.alibaba.druid.filter.logging.LogFilter.logExecutableSql(ms) :217
-com.alibaba.druid.filter.logging.LogFilter.statementExecuteAfter(ms) :226
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :229
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :229
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :230
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :230
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :230
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :230
-com.alibaba.druid.pool.DruidPooledStatement.getResultSet(ms) :97
-com.alibaba.druid.filter.FilterChainImpl.resultSet_getTimestamp(ms) :10
-com.alibaba.druid.filter.FilterAdapter.resultSet_getTimestamp(ms) :11
-com.alibaba.druid.filter.FilterChainImpl.resultSet_getTimestamp(ms) :11
-com.alibaba.druid.filter.FilterAdapter.resultSet_getTimestamp(ms) :11
-com.alibaba.druid.filter.FilterChainImpl.resultSet_getTimestamp(ms) :11
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.getTimestamp(ms) :11
-com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :12
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :12
-com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :12
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :12
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :12
-com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :12
-com.alibaba.druid.filter.logging.Log4jFilter.statementLog(ms) :6
-com.alibaba.druid.filter.logging.LogFilter.statement_close(ms) :6
-com.alibaba.druid.filter.FilterChainImpl.statement_close(ms) :6
-com.alibaba.druid.filter.stat.StatFilter.statement_close(ms) :6
-com.alibaba.druid.filter.FilterChainImpl.statement_close(ms) :6
-com.alibaba.druid.proxy.jdbc.StatementProxyImpl.close(ms) :6
-com.alibaba.druid.pool.DruidPooledStatement.close(ms) :6
-com.alibaba.druid.pool.DruidPooledPreparedStatement.closeInternal(ms) :6
-com.alibaba.druid.pool.DruidPooledConnection.closePoolableStatement(ms) :6
-com.alibaba.druid.pool.DruidPooledPreparedStatement.close(ms) :6
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :548
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :549
-com.alibaba.druid.sql.parser.Lexer.nextToken(ms) :2
-com.alibaba.druid.sql.parser.SQLExprParser.dotRest(ms) :2
-com.alibaba.druid.sql.parser.SQLExprParser.primaryRest(ms) :2
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.primaryRest(ms) :2
-com.alibaba.druid.sql.parser.SQLExprParser.primary(ms) :2
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.primary(ms) :2
-com.alibaba.druid.sql.parser.SQLExprParser.expr(ms) :3
-com.alibaba.druid.sql.parser.SQLSelectParser.expr(ms) :3
-com.alibaba.druid.sql.parser.SQLSelectParser.parseTableSourceQueryTableExpr(ms) :3
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSource(ms) :3
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseFrom(ms) :3
-com.alibaba.druid.sql.parser.SQLExprParser.parseLimit(ms) :4
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(ms) :8
-com.alibaba.druid.sql.parser.SQLSelectParser.select(ms) :8
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(ms) :8
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :8
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :8
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :8
-com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr.accept0(ms) :2
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :2
-com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.visitBinaryLeft(ms) :2
-com.alibaba.druid.sql.ast.expr.SQLBinaryOpExpr.accept0(ms) :2
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :2
-com.alibaba.druid.sql.dialect.mysql.visitor.MySqlOutputVisitor.visit(ms) :2
-com.alibaba.druid.sql.dialect.mysql.ast.statement.MySqlSelectQueryBlock.accept0(ms) :2
-com.alibaba.druid.sql.dialect.mysql.ast.statement.MySqlSelectQueryBlock.accept0(ms) :2
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :2
-com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.visit(ms) :2
-com.alibaba.druid.sql.ast.statement.SQLSelect.accept0(ms) :2
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :2
-com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.visit(ms) :2
-com.alibaba.druid.sql.ast.statement.SQLSelectStatement.accept0(ms) :2
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :2
-com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ms) :11
-com.alibaba.druid.filter.stat.StatFilter.mergeSql(ms) :11
-com.alibaba.druid.filter.stat.StatFilter.createSqlStat(ms) :19
-com.alibaba.druid.filter.stat.StatFilter.statementPrepareAfter(ms) :19
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :20
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :20
-com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :20
-com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :20
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.createParemeter(ms) :3
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.setInt(ms) :4
-com.alibaba.druid.pool.DruidPooledPreparedStatement.setInt(ms) :4
-com.alibaba.druid.filter.logging.LogFilter.statementExecuteAfter(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :5
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :5
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :5
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :5
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :5
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :5
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :208
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :208
-org.mybatis.spring.SqlSessionUtils$SqlSessionSynchronization.beforeCompletion(ms) :8
-org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(ms) :2
-org.springframework.jdbc.datasource.DataSourceUtils.releaseConnection(ms) :2
-org.springframework.jdbc.datasource.DataSourceUtils$ConnectionSynchronization.beforeCompletion(ms) :2
-org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(ms) :2
-org.springframework.data.redis.core.RedisConnectionUtils.getConnection(ms) :2
-org.springframework.data.redis.core.RedisConnectionUtils.getConnection(ms) :2
-org.springframework.data.redis.core.RedisConnectionUtils.releaseConnection(ms) :2
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :5
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :5
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :5
-org.mybatis.spring.SqlSessionUtils.getSqlSession(ms) :4
-com.alibaba.druid.filter.logging.Log4jFilter.connectionLog(ms) :3
-com.alibaba.druid.filter.logging.LogFilter.dataSource_getConnection(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(ms) :3
-com.alibaba.druid.filter.stat.StatFilter.dataSource_getConnection(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(ms) :3
-com.alibaba.druid.pool.DruidDataSource.getConnection(ms) :3
-com.alibaba.druid.pool.DruidDataSource.getConnection(ms) :3
-com.alibaba.druid.pool.DruidDataSource.getConnection(ms) :3
-org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(ms) :5
-org.springframework.jdbc.datasource.DataSourceUtils.getConnection(ms) :5
-org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(ms) :7
-org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(ms) :7
+org.mybatis.spring.SqlSessionUtils.registerSessionHolder(ms) :48
+org.mybatis.spring.SqlSessionUtils.getSqlSession(ms) :63
+com.alibaba.druid.filter.FilterChainImpl.wrap(ms) :18
+com.alibaba.druid.filter.FilterChainImpl.connection_connect(ms) :3209
+com.alibaba.druid.filter.FilterChainImpl.connection_connect(ms) :3210
+com.alibaba.druid.filter.FilterChainImpl.connection_connect(ms) :3210
+com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(ms) :35
+com.alibaba.druid.filter.FilterAdapter.connection_isReadOnly(ms) :49
+com.alibaba.druid.filter.FilterChainImpl.connection_isReadOnly(ms) :50
+com.alibaba.druid.filter.FilterAdapter.connection_isReadOnly(ms) :50
+com.alibaba.druid.filter.FilterChainImpl.connection_isReadOnly(ms) :50
+com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.isReadOnly(ms) :50
+com.alibaba.druid.filter.FilterAdapter.connection_getTransactionIsolation(ms) :48
+com.alibaba.druid.filter.FilterChainImpl.connection_getTransactionIsolation(ms) :48
+com.alibaba.druid.filter.FilterAdapter.connection_getTransactionIsolation(ms) :48
+com.alibaba.druid.filter.FilterChainImpl.connection_getTransactionIsolation(ms) :48
+com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.getTransactionIsolation(ms) :48
+com.alibaba.druid.pool.DruidConnectionHolder.<init>(ms) :99
+com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(ms) :3347
+com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(ms) :3348
+com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(ms) :3353
+org.springframework.jdbc.datasource.ConnectionHolder.<init>(ms) :2
+org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(ms) :3503
+org.springframework.jdbc.datasource.DataSourceUtils.getConnection(ms) :3503
+org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(ms) :3517
+org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(ms) :3517
+com.alibaba.druid.filter.FilterChainImpl.wrap(ms) :28
+com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :49
+com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(ms) :49
+com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :49
+com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :49
+com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(ms) :49
+com.alibaba.druid.sql.parser.Token.<clinit>(ms) :6
+com.alibaba.druid.sql.parser.Keywords.<clinit>(ms) :13
+com.alibaba.druid.sql.dialect.mysql.parser.MySqlLexer.<clinit>(ms) :22
+com.alibaba.druid.sql.parser.Lexer.<init>(ms) :15
+com.alibaba.druid.sql.parser.Lexer.nextToken(ms) :4
+com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.<init>(ms) :4
+com.alibaba.druid.sql.parser.SQLParserUtils.createSQLStatementParser(ms) :65
+com.alibaba.druid.sql.parser.SQLParser.as(ms) :5
+com.alibaba.druid.sql.parser.SQLExprParser.parseSelectItem(ms) :14
+com.alibaba.druid.sql.parser.SQLSelectParser.parseSelectList(ms) :15
+com.alibaba.druid.sql.parser.SQLExprParser.primary(ms) :8
+com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.primary(ms) :9
+com.alibaba.druid.sql.parser.SQLExprParser.expr(ms) :9
+com.alibaba.druid.sql.parser.SQLSelectParser.expr(ms) :9
+com.alibaba.druid.sql.parser.SQLSelectParser.parseTableSourceQueryTableExpr(ms) :9
+com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSource(ms) :17
+com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseFrom(ms) :18
+com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(ms) :35
+com.alibaba.druid.sql.parser.SQLSelectParser.select(ms) :39
+com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(ms) :67
+com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :67
+com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :67
+com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :67
+com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.createParameterizedOutputVisitor(ms) :180
+com.alibaba.druid.sql.ast.expr.SQLIdentifierExpr.accept0(ms) :4
+com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :4
+com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.visit(ms) :4
+com.alibaba.druid.sql.ast.statement.SQLSelectItem.accept0(ms) :4
+com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :4
+com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.printSelectList(ms) :4
+com.alibaba.druid.sql.dialect.mysql.visitor.MySqlOutputVisitor.visit(ms) :5
+com.alibaba.druid.sql.dialect.mysql.ast.statement.MySqlSelectQueryBlock.accept0(ms) :5
+com.alibaba.druid.sql.dialect.mysql.ast.statement.MySqlSelectQueryBlock.accept0(ms) :5
+com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :5
+com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.visit(ms) :5
+com.alibaba.druid.sql.ast.statement.SQLSelect.accept0(ms) :5
+com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :5
+com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.visit(ms) :5
+com.alibaba.druid.sql.ast.statement.SQLSelectStatement.accept0(ms) :5
+com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :5
+com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ms) :590
+com.alibaba.druid.filter.stat.StatFilter.mergeSql(ms) :600
+com.alibaba.druid.stat.JdbcSqlStat.<clinit>(ms) :3
+com.alibaba.druid.stat.JdbcDataSourceStat.createSqlStat(ms) :3
+com.alibaba.druid.filter.stat.StatFilter.createSqlStat(ms) :604
+com.alibaba.druid.filter.stat.StatFilter.statementPrepareAfter(ms) :604
+com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :654
+com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :654
+com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :654
+com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :664
+com.alibaba.druid.support.profile.Profiler.enter(ms) :6
+com.alibaba.druid.filter.stat.StatFilter.internalBeforeStatementExecute(ms) :9
+com.alibaba.druid.filter.stat.StatFilter.statementExecuteBefore(ms) :9
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :42
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :42
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :52
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :52
+com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :54
+com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :55
+com.alibaba.druid.filter.FilterChainImpl.wrap(ms) :21
+com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :21
+com.alibaba.druid.filter.FilterAdapter.statement_getResultSet(ms) :21
+com.alibaba.druid.filter.FilterChainImpl.wrap(ms) :4
+com.alibaba.druid.filter.FilterChainImpl.resultSet_getMetaData(ms) :4
+com.alibaba.druid.filter.FilterAdapter.resultSet_getMetaData(ms) :4
+com.alibaba.druid.filter.FilterChainImpl.resultSet_getMetaData(ms) :4
+com.alibaba.druid.filter.FilterAdapter.resultSet_getMetaData(ms) :4
+com.alibaba.druid.filter.FilterChainImpl.resultSet_getMetaData(ms) :4
+com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.getMetaData(ms) :4
+com.alibaba.druid.filter.logging.LogFilter.resultSetOpenAfter(ms) :4
+com.alibaba.druid.filter.FilterEventAdapter.statement_getResultSet(ms) :26
+com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :26
+com.alibaba.druid.filter.FilterAdapter.statement_getResultSet(ms) :26
+com.alibaba.druid.filter.FilterEventAdapter.statement_getResultSet(ms) :26
+com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :26
+com.alibaba.druid.proxy.jdbc.StatementProxyImpl.getResultSet(ms) :26
+com.alibaba.druid.pool.DruidPooledStatement.getResultSet(ms) :54
+com.alibaba.druid.filter.FilterAdapter.resultSetMetaData_getColumnLabel(ms) :2
+com.alibaba.druid.filter.FilterChainImpl.resultSetMetaData_getColumnLabel(ms) :2
+com.alibaba.druid.filter.FilterAdapter.resultSetMetaData_getColumnLabel(ms) :2
+com.alibaba.druid.filter.FilterChainImpl.resultSetMetaData_getColumnLabel(ms) :2
+com.alibaba.druid.proxy.jdbc.ResultSetMetaDataProxyImpl.getColumnLabel(ms) :2
+com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :2
+com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :2
+com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :2
+com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :2
+com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :2
+com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :2
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ms) :4549
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:230)
+com.sun.proxy.$Proxy19.selectUsers(Unknown Source)
+com.zuosh.web.UserController.getAllUsers(UserController.java:92)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:497)
+org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:690)
+org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945)
+org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876)
+org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:575)
+org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:485)
+org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:520)
+org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1061)
+org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:412)
+org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:995)
+org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+org.eclipse.jetty.server.Server.handle(Server.java:350)
+org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:431)
+org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:896)
+org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:647)
+org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:233)
+org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:68)
+org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+java.lang.Thread.run(Thread.java:745)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :4549
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:98)
+org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:262)
+org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:230)
+com.sun.proxy.$Proxy19.selectUsers(Unknown Source)
+com.zuosh.web.UserController.getAllUsers(UserController.java:92)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:497)
+org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:690)
+org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945)
+org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876)
+org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:575)
+org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:485)
+org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:520)
+org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1061)
+org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:412)
+org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:995)
+org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+org.eclipse.jetty.server.Server.handle(Server.java:350)
+org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:431)
+org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:896)
+org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:647)
+org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:233)
+org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:68)
+org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+java.lang.Thread.run(Thread.java:745)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :4615
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:230)
+com.sun.proxy.$Proxy19.selectUsers(Unknown Source)
+com.zuosh.web.UserController.getAllUsers(UserController.java:92)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:497)
+org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:690)
+org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945)
+org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876)
+org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:575)
+org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:485)
+org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:520)
+org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1061)
+org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:412)
+org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:995)
+org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+org.eclipse.jetty.server.Server.handle(Server.java:350)
+org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:431)
+org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:896)
+org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:647)
+org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:233)
+org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:68)
+org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+java.lang.Thread.run(Thread.java:745)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :4617
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:230)
+com.sun.proxy.$Proxy19.selectUsers(Unknown Source)
+com.zuosh.web.UserController.getAllUsers(UserController.java:92)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:497)
+org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:690)
+org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:945)
+org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:876)
+org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+javax.servlet.http.HttpServlet.service(HttpServlet.java:734)
+org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:575)
+org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:485)
+org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:520)
+org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1061)
+org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:412)
+org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:995)
+org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:149)
+org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+org.eclipse.jetty.server.Server.handle(Server.java:350)
+org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:431)
+org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:896)
+org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:647)
+org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:233)
+org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:68)
+org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:598)
+org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:533)
+java.lang.Thread.run(Thread.java:745)
 com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :2
 com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :2
 com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :2
 com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :2
-com.alibaba.druid.sql.SQLUtils.format(ms) :2
-com.alibaba.druid.filter.logging.LogFilter.logExecutableSql(ms) :2
-com.alibaba.druid.filter.logging.LogFilter.statementExecuteAfter(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :12
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :12
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :12
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :12
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :12
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :12
-com.alibaba.druid.filter.logging.Log4jFilter.resultSetLog(ms) :39
-com.alibaba.druid.filter.logging.LogFilter.resultSetOpenAfter(ms) :40
-com.alibaba.druid.filter.FilterEventAdapter.statement_getResultSet(ms) :40
-com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :40
-com.alibaba.druid.filter.FilterAdapter.statement_getResultSet(ms) :41
-com.alibaba.druid.filter.FilterEventAdapter.statement_getResultSet(ms) :41
-com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :42
-com.alibaba.druid.proxy.jdbc.StatementProxyImpl.getResultSet(ms) :42
-com.alibaba.druid.pool.DruidPooledStatement.getResultSet(ms) :42
-com.alibaba.druid.filter.FilterChainImpl.resultSet_getTimestamp(ms) :2
-com.alibaba.druid.filter.FilterAdapter.resultSet_getTimestamp(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.resultSet_getTimestamp(ms) :3
-com.alibaba.druid.filter.FilterAdapter.resultSet_getTimestamp(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.resultSet_getTimestamp(ms) :3
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.getTimestamp(ms) :3
-com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :5
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :5
-com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :5
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :5
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :5
-com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :5
-com.alibaba.druid.filter.FilterChainImpl.resultSet_getString(ms) :3
-com.alibaba.druid.filter.FilterAdapter.resultSet_getString(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.resultSet_getString(ms) :3
-com.alibaba.druid.filter.stat.StatFilter.resultSet_getString(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.resultSet_getString(ms) :3
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.getString(ms) :3
-com.alibaba.druid.pool.DruidPooledResultSet.getString(ms) :3
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :88
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :88
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(ms) :3
-com.alibaba.druid.sql.parser.SQLSelectParser.select(ms) :3
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(ms) :3
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :3
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :3
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :3
-com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ms) :5
-com.alibaba.druid.filter.stat.StatFilter.mergeSql(ms) :5
-com.alibaba.druid.filter.stat.StatFilter.createSqlStat(ms) :5
-com.alibaba.druid.filter.stat.StatFilter.statementPrepareAfter(ms) :5
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :6
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :6
-com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :6
-com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :6
-com.alibaba.druid.filter.logging.LogFilter.statementExecuteAfter(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :5
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :5
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :5
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :5
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :5
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :5
-com.alibaba.druid.filter.logging.Log4jFilter.resultSetLog(ms) :81
-com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :82
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :82
-com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :82
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :82
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :82
-com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :82
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :106
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :106
-com.alibaba.druid.filter.logging.Log4jFilter.connectionLog(ms) :2
-com.alibaba.druid.filter.logging.LogFilter.dataSource_getConnection(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(ms) :3
-com.alibaba.druid.filter.stat.StatFilter.dataSource_getConnection(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(ms) :3
-com.alibaba.druid.pool.DruidDataSource.getConnection(ms) :3
-com.alibaba.druid.pool.DruidDataSource.getConnection(ms) :3
-com.alibaba.druid.pool.DruidDataSource.getConnection(ms) :3
-org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(ms) :5
-org.springframework.jdbc.datasource.DataSourceUtils.getConnection(ms) :5
-org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(ms) :6
-org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(ms) :6
-com.alibaba.druid.sql.parser.SQLSelectParser.parseSelectList(ms) :3
-com.alibaba.druid.sql.parser.SQLExprParser.parseSelectOrderByItem(ms) :2
-com.alibaba.druid.sql.parser.SQLExprParser.parseOrderBy(ms) :7
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(ms) :12
-com.alibaba.druid.sql.parser.SQLSelectParser.select(ms) :12
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(ms) :12
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :12
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :12
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :12
-com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ms) :14
-com.alibaba.druid.filter.stat.StatFilter.mergeSql(ms) :14
-com.alibaba.druid.filter.stat.StatFilter.createSqlStat(ms) :14
-com.alibaba.druid.filter.stat.StatFilter.statementPrepareAfter(ms) :14
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :16
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :16
-com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :16
-com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :16
-com.alibaba.druid.sql.parser.SQLSelectParser.parseSelectList(ms) :2
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(ms) :3
-com.alibaba.druid.sql.parser.SQLSelectParser.select(ms) :3
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(ms) :3
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :3
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :3
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :3
-com.alibaba.druid.sql.SQLUtils.format(ms) :5
-com.alibaba.druid.filter.logging.LogFilter.logExecutableSql(ms) :5
-com.alibaba.druid.filter.logging.Log4jFilter.statementLog(ms) :3
-com.alibaba.druid.filter.logging.LogFilter.statementExecuteAfter(ms) :9
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :14
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :14
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :14
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :14
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :14
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :14
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :49
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :49
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :50
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :50
+com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :50
+com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :50
+org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :60
+org.mybatis.spring.SqlSessionTemplate.selectList(ms) :60
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(ms) :60
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ms) :60
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :60
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :60
+org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ms) :60
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :60
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(ms) :61
+com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :2
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :42
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :42
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :42
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :42
+com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :42
+com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :42
+com.alibaba.druid.filter.logging.Log4jFilter.resultSetLog(ms) :2
+com.alibaba.druid.filter.logging.LogFilter.resultSetOpenAfter(ms) :2
+com.alibaba.druid.filter.FilterEventAdapter.statement_getResultSet(ms) :2
+com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :2
+com.alibaba.druid.filter.FilterAdapter.statement_getResultSet(ms) :2
+com.alibaba.druid.filter.FilterEventAdapter.statement_getResultSet(ms) :2
+com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :2
+com.alibaba.druid.proxy.jdbc.StatementProxyImpl.getResultSet(ms) :2
+com.alibaba.druid.pool.DruidPooledStatement.getResultSet(ms) :3
+org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :54
+org.mybatis.spring.SqlSessionTemplate.selectList(ms) :55
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(ms) :55
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ms) :55
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :55
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :55
+org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ms) :55
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :55
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(ms) :55
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :34
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :34
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :34
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :34
+com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :34
+com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :34
+org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :41
+org.mybatis.spring.SqlSessionTemplate.selectList(ms) :41
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(ms) :41
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ms) :41
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :41
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :43
+org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ms) :43
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :43
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(ms) :43
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :34
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :34
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :35
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :35
+com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :35
+com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :35
+org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :41
+org.mybatis.spring.SqlSessionTemplate.selectList(ms) :41
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(ms) :41
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ms) :41
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :41
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :42
+org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ms) :42
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :42
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(ms) :42
+com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ms) :3
+com.alibaba.druid.filter.stat.StatFilter.mergeSql(ms) :3
+com.alibaba.druid.filter.stat.StatFilter.createSqlStat(ms) :3
+com.alibaba.druid.filter.stat.StatFilter.statementPrepareAfter(ms) :3
+com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :3
+com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :3
+com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :3
+com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :3
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :40
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :40
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :40
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :40
+com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :40
+com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :40
 com.alibaba.druid.filter.logging.LogFilter.resultSetOpenAfter(ms) :2
 com.alibaba.druid.filter.FilterEventAdapter.statement_getResultSet(ms) :2
 com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :2
@@ -361,445 +409,87 @@ com.alibaba.druid.filter.FilterEventAdapter.statement_getResultSet(ms) :2
 com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :2
 com.alibaba.druid.proxy.jdbc.StatementProxyImpl.getResultSet(ms) :2
 com.alibaba.druid.pool.DruidPooledStatement.getResultSet(ms) :2
-com.alibaba.druid.filter.logging.Log4jFilter.resultSetLog(ms) :2
-com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :6
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :6
-com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :6
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :6
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :6
-com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :6
-com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :2
-com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :2
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :2
-com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :2
-com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :2
-com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :2
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :2
-com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :2
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :123
-org.mybatis.spring.SqlSessionTemplate.selectList(ms) :123
-com.alibaba.druid.sql.parser.SQLExprParser.parseAggregateExpr(ms) :5
-com.alibaba.druid.sql.parser.SQLExprParser.methodRest(ms) :11
-com.alibaba.druid.sql.parser.SQLExprParser.primaryRest(ms) :11
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.primaryRest(ms) :11
-com.alibaba.druid.sql.parser.SQLExprParser.parseSelectItem(ms) :11
-com.alibaba.druid.sql.parser.SQLSelectParser.parseSelectList(ms) :11
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(ms) :12
-com.alibaba.druid.sql.parser.SQLSelectParser.select(ms) :12
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(ms) :12
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :12
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :12
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :12
-com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ms) :15
-com.alibaba.druid.filter.stat.StatFilter.mergeSql(ms) :15
-com.alibaba.druid.filter.stat.StatFilter.createSqlStat(ms) :15
-com.alibaba.druid.filter.stat.StatFilter.statementPrepareAfter(ms) :15
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :15
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :15
-com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :15
-com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :16
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :3
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :3
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :26
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :26
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :2
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :2
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :2
-com.alibaba.druid.filter.logging.LogFilter.statementExecuteAfter(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :6
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :6
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :6
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :6
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :6
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :6
-com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :2
-com.alibaba.druid.filter.FilterAdapter.statement_getResultSet(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.statement_getResultSet(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :3
-com.alibaba.druid.filter.FilterAdapter.statement_getResultSet(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.statement_getResultSet(ms) :4
-com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :4
-com.alibaba.druid.proxy.jdbc.StatementProxyImpl.getResultSet(ms) :4
-com.alibaba.druid.pool.DruidPooledStatement.getResultSet(ms) :4
-com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :2
-com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :2
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :2
-com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :2
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :22
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :22
-com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :2
-com.alibaba.druid.filter.logging.LogFilter.statementExecuteAfter(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :4
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :4
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :4
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :4
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :4
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :4
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :13
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :13
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :2
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :2
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :3
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :4
-com.alibaba.druid.filter.logging.Log4jFilter.resultSetLog(ms) :6
-com.alibaba.druid.filter.logging.LogFilter.resultSetOpenAfter(ms) :6
-com.alibaba.druid.filter.FilterEventAdapter.statement_getResultSet(ms) :6
-com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :6
-com.alibaba.druid.filter.FilterAdapter.statement_getResultSet(ms) :6
-com.alibaba.druid.filter.FilterEventAdapter.statement_getResultSet(ms) :6
-com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :6
-com.alibaba.druid.proxy.jdbc.StatementProxyImpl.getResultSet(ms) :6
-com.alibaba.druid.pool.DruidPooledStatement.getResultSet(ms) :6
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :24
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :24
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :2
-com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :2
-com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :3
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :4
-com.alibaba.druid.filter.logging.Log4jFilter.resultSetLog(ms) :18
-com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :18
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :18
-com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :18
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :18
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :18
-com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :18
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :32
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :32
-com.alibaba.druid.pool.DruidDataSource.pollLast(ms) :2
-com.alibaba.druid.pool.DruidDataSource.getConnectionInternal(ms) :2
-com.alibaba.druid.pool.DruidDataSource.getConnectionDirect(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(ms) :2
-com.alibaba.druid.filter.logging.LogFilter.dataSource_getConnection(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(ms) :2
-com.alibaba.druid.filter.stat.StatFilter.dataSource_getConnection(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(ms) :2
-com.alibaba.druid.pool.DruidDataSource.getConnection(ms) :2
-com.alibaba.druid.pool.DruidDataSource.getConnection(ms) :2
-com.alibaba.druid.pool.DruidDataSource.getConnection(ms) :2
-org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(ms) :3
-org.springframework.jdbc.datasource.DataSourceUtils.getConnection(ms) :3
-org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(ms) :3
-org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(ms) :3
-com.alibaba.druid.sql.parser.SQLSelectParser.parseSelectList(ms) :2
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(ms) :4
-com.alibaba.druid.sql.parser.SQLSelectParser.select(ms) :4
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(ms) :4
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :4
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :4
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :4
-com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ms) :6
-com.alibaba.druid.filter.stat.StatFilter.mergeSql(ms) :6
-com.alibaba.druid.filter.stat.StatFilter.createSqlStat(ms) :6
-com.alibaba.druid.filter.stat.StatFilter.statementPrepareAfter(ms) :6
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :7
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :7
-com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :7
-com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :7
-com.alibaba.druid.sql.parser.SQLSelectParser.parseSelectList(ms) :2
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(ms) :3
-com.alibaba.druid.sql.parser.SQLSelectParser.select(ms) :3
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(ms) :3
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :3
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :3
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :3
-com.alibaba.druid.sql.SQLUtils.format(ms) :5
-com.alibaba.druid.filter.logging.LogFilter.logExecutableSql(ms) :5
-com.alibaba.druid.filter.logging.Log4jFilter.statementLog(ms) :9
-com.alibaba.druid.filter.logging.LogFilter.statementExecuteAfter(ms) :15
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :20
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :20
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :20
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :20
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :20
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :20
-com.alibaba.druid.filter.logging.Log4jFilter.resultSetLog(ms) :2
-com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :4
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :4
-com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :4
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :4
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :4
-com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :4
-com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :2
-com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :2
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :2
-com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :2
-com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :3
-com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :3
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :3
-com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :3
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :212
-org.mybatis.spring.SqlSessionTemplate.selectList(ms) :212
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :2
-com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :2
-com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :3
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :3
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :12
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :12
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :2
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :2
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :4
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :4
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :4
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :4
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :4
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :4
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :16
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :16
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :4
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :4
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :4
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :4
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :18
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :18
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :2
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :2
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :4
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :4
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :4
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :4
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :14
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :14
-com.alibaba.druid.filter.logging.Log4jFilter.statementLog(ms) :8
-com.alibaba.druid.filter.logging.LogFilter.logParameter(ms) :8
-com.alibaba.druid.filter.logging.LogFilter.statementExecuteBefore(ms) :8
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :11
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :11
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :11
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :11
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :11
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :11
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :25
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :25
-org.mybatis.spring.SqlSessionUtils$SqlSessionSynchronization.beforeCompletion(ms) :4
-com.alibaba.druid.filter.logging.Log4jFilter.statementLog(ms) :5
-com.alibaba.druid.filter.logging.LogFilter.statementPrepareAfter(ms) :5
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :5
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :5
-com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(ms) :5
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(ms) :2
-com.alibaba.druid.sql.parser.SQLSelectParser.select(ms) :2
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(ms) :2
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :2
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :2
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :2
-com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ms) :3
-com.alibaba.druid.filter.stat.StatFilter.mergeSql(ms) :3
-com.alibaba.druid.filter.stat.StatFilter.createSqlStat(ms) :3
-com.alibaba.druid.filter.stat.StatFilter.statementPrepareAfter(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :9
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :9
-com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :9
-com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :9
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(ms) :2
-com.alibaba.druid.sql.parser.SQLSelectParser.select(ms) :2
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(ms) :2
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :2
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :2
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :2
-com.alibaba.druid.sql.SQLUtils.format(ms) :3
-com.alibaba.druid.filter.logging.LogFilter.logExecutableSql(ms) :3
-com.alibaba.druid.filter.logging.LogFilter.statementExecuteAfter(ms) :4
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :9
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :9
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :9
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :9
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :9
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :9
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :46
-org.mybatis.spring.SqlSessionTemplate.selectList(ms) :46
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :2
-com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :3
-com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :3
-com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :3
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :3
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :12
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :12
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :2
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :2
-org.springframework.data.redis.core.RedisTemplate.execute(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :3
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :3
-com.alibaba.druid.filter.logging.Log4jFilter.resultSetLog(ms) :8
-com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :9
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :9
-com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :9
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :9
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :9
-com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :9
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :25
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :25
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :3
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :3
-com.alibaba.druid.filter.logging.LogFilter.resultSetOpenAfter(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.statement_getResultSet(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :2
-com.alibaba.druid.filter.FilterAdapter.statement_getResultSet(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.statement_getResultSet(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.statement_getResultSet(ms) :2
-com.alibaba.druid.proxy.jdbc.StatementProxyImpl.getResultSet(ms) :2
-com.alibaba.druid.pool.DruidPooledStatement.getResultSet(ms) :2
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :12
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :12
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :3
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.resultSet_getTimestamp(ms) :2
-com.alibaba.druid.filter.FilterAdapter.resultSet_getTimestamp(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.resultSet_getTimestamp(ms) :2
-com.alibaba.druid.filter.FilterAdapter.resultSet_getTimestamp(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.resultSet_getTimestamp(ms) :2
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.getTimestamp(ms) :2
-com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :5
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :5
-com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :5
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :5
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :5
-com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :5
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :16
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :16
-com.alibaba.druid.filter.logging.Log4jFilter.statementLog(ms) :2
-com.alibaba.druid.filter.logging.LogFilter.statementPrepareAfter(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :2
-com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :3
-com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :3
-com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :3
-com.alibaba.druid.filter.logging.Log4jFilter.statementLog(ms) :8
-com.alibaba.druid.filter.logging.LogFilter.logParameter(ms) :8
-com.alibaba.druid.filter.logging.LogFilter.statementExecuteBefore(ms) :8
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :11
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :11
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :11
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :11
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :11
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :11
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :22
-org.mybatis.spring.SqlSessionTemplate.selectOne(ms) :22
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(ms) :2
-com.alibaba.druid.sql.parser.SQLSelectParser.select(ms) :2
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(ms) :2
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :2
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :2
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :2
-com.alibaba.druid.sql.visitor.ParameterizedOutputVisitorUtils.parameterize(ms) :3
-com.alibaba.druid.filter.stat.StatFilter.mergeSql(ms) :3
-com.alibaba.druid.filter.stat.StatFilter.createSqlStat(ms) :3
-com.alibaba.druid.filter.stat.StatFilter.statementPrepareAfter(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :4
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :4
-com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :4
-com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :5
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(ms) :2
-com.alibaba.druid.sql.parser.SQLSelectParser.select(ms) :2
-com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(ms) :2
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :2
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :2
-com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(ms) :2
-com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.printSelectList(ms) :2
-com.alibaba.druid.sql.dialect.mysql.visitor.MySqlOutputVisitor.visit(ms) :2
-com.alibaba.druid.sql.dialect.mysql.ast.statement.MySqlSelectQueryBlock.accept0(ms) :2
-com.alibaba.druid.sql.dialect.mysql.ast.statement.MySqlSelectQueryBlock.accept0(ms) :2
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :2
-com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.visit(ms) :2
-com.alibaba.druid.sql.ast.statement.SQLSelect.accept0(ms) :2
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :2
-com.alibaba.druid.sql.visitor.SQLASTOutputVisitor.visit(ms) :2
-com.alibaba.druid.sql.ast.statement.SQLSelectStatement.accept0(ms) :2
-com.alibaba.druid.sql.ast.SQLObjectImpl.accept(ms) :2
-com.alibaba.druid.sql.SQLUtils.toSQLString(ms) :2
-com.alibaba.druid.sql.SQLUtils.toSQLString(ms) :2
-com.alibaba.druid.sql.SQLUtils.format(ms) :5
-com.alibaba.druid.filter.logging.LogFilter.logExecutableSql(ms) :6
-com.alibaba.druid.filter.logging.LogFilter.statementExecuteAfter(ms) :6
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :11
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :11
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :11
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :11
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :11
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :11
-com.alibaba.druid.filter.logging.Log4jFilter.resultSetLog(ms) :4
-com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :5
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :5
-com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :5
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :5
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :5
-com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :6
-com.alibaba.druid.filter.logging.LogFilter.resultSet_next(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :2
-com.alibaba.druid.filter.FilterAdapter.resultSet_next(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.resultSet_next(ms) :2
-com.alibaba.druid.proxy.jdbc.ResultSetProxyImpl.next(ms) :2
-com.alibaba.druid.pool.DruidPooledResultSet.next(ms) :2
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :46
-org.mybatis.spring.SqlSessionTemplate.selectList(ms) :46
-com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(ms) :2
-com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(ms) :2
-com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(ms) :2
-com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ms) :2
-com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :3
-com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :3
-com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :3
-com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :3
-org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :14
+org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :52
+org.mybatis.spring.SqlSessionTemplate.selectList(ms) :52
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(ms) :52
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ms) :52
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :52
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :52
+org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ms) :52
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :52
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(ms) :52
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :47
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :47
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :47
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :47
+com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :47
+com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :47
+org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :53
+org.mybatis.spring.SqlSessionTemplate.selectList(ms) :53
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(ms) :53
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ms) :53
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :53
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :53
+org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ms) :53
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :53
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(ms) :53
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :48
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :48
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :48
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :48
+com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :48
+com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :49
+org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :54
+org.mybatis.spring.SqlSessionTemplate.selectList(ms) :54
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(ms) :54
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ms) :54
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :55
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :55
+org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ms) :55
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :55
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(ms) :55
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :34
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :34
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :35
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :35
+com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :35
+com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :35
+org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :40
+org.mybatis.spring.SqlSessionTemplate.selectList(ms) :40
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(ms) :40
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ms) :40
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :40
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :40
+org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ms) :40
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :40
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(ms) :40
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :37
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :37
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :38
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :38
+com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :38
+com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :38
+org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :43
+org.mybatis.spring.SqlSessionTemplate.selectList(ms) :43
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(ms) :43
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ms) :43
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :43
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :44
+org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ms) :44
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :44
+org.springframework.aop.framework.JdkDynamicAopProxy.invoke(ms) :44
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :35
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :35
+com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(ms) :35
+com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(ms) :35
+com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(ms) :35
+com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(ms) :35
+org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(ms) :41
+org.mybatis.spring.SqlSessionTemplate.selectList(ms) :41
+org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(ms) :41
+org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ms) :41
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :41
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :41
+org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ms) :42
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ms) :42
 终止批处理操作吗(Y/N)? 

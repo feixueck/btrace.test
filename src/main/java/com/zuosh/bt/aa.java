@@ -83,14 +83,26 @@ public class aa {
 //            println(cname + "." + pmn + "(ms) :" + (time / 1000000));
 //        }
 //    }
+
+    //durid
     @OnMethod(clazz = "/com.alibaba.druid.*/", method = "/.*/"
             , location = @Location(Kind.RETURN))
     public static void test(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
+        if (time / 100000 > 1) {
+            println(cname + "." + pmn + "(ms) :" + (time / 1000000));
+        }
+    }
+
+    // ibatis
+    @OnMethod(clazz = "/org.apache.ibatis.*/", method = "/.*/"
+            , location = @Location(Kind.RETURN))
+    public static void ibatisMy(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
         if (time / 1000000 > 1) {
             println(cname + "." + pmn + "(ms) :" + (time / 1000000));
         }
     }
 
+    ///mybatis
     @OnMethod(clazz = "/org.mybatis.*/", method = "/.*/"
             , location = @Location(Kind.RETURN))
     public static void sqlsessaion(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
@@ -99,6 +111,7 @@ public class aa {
         }
     }
 
+    //jdbc
     @OnMethod(clazz = "/org.springframework.jdbc.*/", method = "/.*/"
             , location = @Location(Kind.RETURN))
     public static void jdbc(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
@@ -115,17 +128,30 @@ public class aa {
         }
     }
 
-    @OnMethod(clazz = "/org.springframework.aop.*/", method = "/.*/"
-            , location = @Location(Kind.RETURN))
-    public static void aop(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
-        if (time / 1000000 > 1) {
-            println(cname + "." + pmn + "(ms) :" + (time / 1000000));
-        }
-        if (time / 1000000 > 500) {
-            jstack();
-        }
-    }
+//    @OnMethod(clazz = "/org.springframework.aop.*/", method = "/.*/"
+//            , location = @Location(Kind.RETURN))
+//    public static void aop(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
+//        if (time / 1000000 > 1) {
+//            println(cname + "." + pmn + "(ms) :" + (time / 1000000));
+//        }
+//        if (time / 1000000 > 500) {
+//            jstack();
+//        }
+//    }
 
+    /**
+     * 定制项目
+     *
+     * @param cname
+     * @param pmn
+     * @param types
+     * @param time
+     */
+    @OnMethod(clazz = "com.zuosh.web.UserController", method = "getAllUsers"
+            , location = @Location(Kind.RETURN))
+    public static void getAllUsers(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
+        println("======================================>>>>" + cname + "." + pmn + "(ms) :" + (time / 1000000));
+    }
 //    @OnMethod(clazz = "org.mybatis.spring.SqlSessionUtils", method = "/.*/"
 //            , location = @Location(Kind.RETURN))
 //    public static void sqlsessaion(@ProbeClassName String cname, @ProbeMethodName String pmn, AnyType[] types, @Duration long time) {
